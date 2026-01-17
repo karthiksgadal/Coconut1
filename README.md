@@ -20,3 +20,26 @@ Develop a **robust web-based platform** to manage **end-to-end event registratio
 - Maintain **detailed audit logs** for registrations, check-ins, and administrative actions.
 - Design the system to be **scalable and reliable** under real-world, high-traffic conditions.
 - Deliver a clean, intuitive, and operationally efficient user experience.
+
+src/
+├── components/
+│   ├── Dashboard/
+│   │   ├── AdminDashboard.jsx
+│   │   ├── OrganizerDashboard.jsx
+│   │   ├── VolunteerDashboard.jsx
+│   │   └── AttendeeDashboard.jsx
+│   ├── Auth/
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   └── common/
+│       ├── ProtectedRoute.jsx
+│       └── Sidebar.jsx
+├── utils/
+│   ├── permissions.js          ← Permission checking logic
+│   ├── api.js                  ← API calls
+│   └── constants.js            ← Roles, permissions constants
+├── context/
+│   └── AuthContext.jsx         ← User authentication state
+├── middleware/
+│   └── authMiddleware.js       ← Route protection
+└── App.jsx
